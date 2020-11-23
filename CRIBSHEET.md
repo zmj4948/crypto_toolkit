@@ -18,9 +18,9 @@
 - Three main families of mathematically hard problems: Integer Factorization (RSA), Discrete Logarithm (Diffie-hellman, ElGamal, DSA), Elliptic Curves (ECDH, ECDSA)                    
 ##RSA
 **Topic 7, Week 11**
-- CRT
-- Primality Testing (Carmichael, Fermat, Miller-Rabin)
-- DHKE
-- ElGamal
-- Hashing
-- Number Theory (Euler, Fermat, last n digits, Group theory, primitive elements)
+##CRT
+##Primality Testing (Carmichael, Fermat, Miller-Rabin)
+##DHKE
+##ElGamal
+##Hashing
+##Number Theory (Euler, Fermat, last n digits, Group theory, primitive elements)
