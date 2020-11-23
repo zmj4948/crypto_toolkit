@@ -1,6 +1,6 @@
-from GCD import gcd
+from ToolKitMain.GCD import gcd
 import random
-from sqrAndMul import square_and_mul
+from ToolKitMain.sqrAndMul import square_and_mul
 
 
 def fermat_test(n, k):

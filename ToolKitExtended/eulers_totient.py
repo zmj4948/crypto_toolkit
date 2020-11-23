@@ -1,4 +1,4 @@
-from GCD import gcd
+from ToolKitMain.GCD import gcd
 
 
 def phi(n):

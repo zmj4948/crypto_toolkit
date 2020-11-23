@@ -1,4 +1,4 @@
-from sqrAndMul import square_and_mul
+from ToolKitMain.sqrAndMul import square_and_mul
 
 
 def discrete_log(x, base, mod):
