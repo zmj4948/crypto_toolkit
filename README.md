@@ -2,7 +2,7 @@
 ## This toolkit is a list of helpful programs used in CSCI-462. This toolkit contains programs for the following: 
 - GCD (check)
 - SQ + MUL (check)
-- modtabs
+- modtabs (check)
 - EEA (check)
 - Fermat Primality test (check) 
 - hashing formulas
