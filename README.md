@@ -10,4 +10,5 @@
 - Euler's Totient Calculator (check) 
 - num to ascii calculator (check) 
 - a, b, c ... <-> 0, 1, 2 ... (check) 
+- Discrete Log calculator (check)
 
