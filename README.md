@@ -12,4 +12,5 @@
 - a, b, c ... <-> 0, 1, 2 ... (check) 
 - Discrete Log calculator (check)
 - Primitive Element calculator (check)
+- AES (check)
 
