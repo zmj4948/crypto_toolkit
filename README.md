@@ -4,7 +4,7 @@
 - SQ + MUL (check)
 - modtabs
 - EEA (check)
-- Fermat Primality test
+- Fermat Primality test (check) 
 - hashing formulas
 ## In addition, this toolkit contains helpful programs such as: 
 - Euler's Totient Calculator (check) 
