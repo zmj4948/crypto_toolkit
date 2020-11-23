@@ -8,6 +8,6 @@
 - hashing formulas
 ## In addition, this toolkit contains helpful programs such as: 
 - Euler's Totient Calculator (check) 
-- num to ascii calculator
-- a, b, c ... <-> 0, 1, 2 ... 
+- num to ascii calculator (check) 
+- a, b, c ... <-> 0, 1, 2 ... (check) 
 
