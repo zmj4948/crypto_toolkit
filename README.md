@@ -12,6 +12,7 @@
 - a, b, c ... <-> 0, 1, 2 ...  
 - Discrete Log calculator
 - Primitive Element calculator
+- Miller-Rabin Primality Test
 ### This toolkit also contains the following Encryption Algorithms
 - AES 
 - RSA 
