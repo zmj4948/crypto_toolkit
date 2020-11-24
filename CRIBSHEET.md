@@ -16,6 +16,7 @@
 - Hybrid systems are used in practice: key exchange is done with asymmetric, and everything else is done with symmetric
 - Based on a "one-way function", where computing the inverse of the function is computationally infeasible
 - Three main families of mathematically hard problems: Integer Factorization (RSA), Discrete Logarithm (Diffie-hellman, ElGamal, DSA), Elliptic Curves (ECDH, ECDSA)                    
+
 ##RSA
 **Topic 7, Week 11, CH 7, pg 173**
 #### RSA Basics
@@ -123,7 +124,53 @@ This turns into an efficient primality test
                 continue WitnessLoop
         return “composite”
     return “probably prime”     
+
 ##DHKE
+**Topic 8, Week 12, CH 8, pg 206**  
+- Proposed in 1976 by Diffie and Hellman
+- used in SSH, TLS, IPSec
+- Key exchange **ONLY**, **not** used for encryption
+- never used on it's own, must authenticate to counteract the "Man in the middle" attack  
+
+Diffie-Hellman Setup
+> 1. Choose large prime _p_
+> 2. Choose an integer α ∈ {2, 3, ..., _p_-2}
+> 3. Publish _p_ and α
+
+Key Exchange  
+	![DHKE overview](crib_sheet_photos/DHKE.JPG)
+
+Alice computes: _B<sup>a</sup>_ = _(α<sup>b</sup>)<sup>a</sup>_ = _α<sup>ab</sup>_ mod _p_ 
+Bob computes: _A<sup>b</sup>_ = _(α<sup>a</sup>)<sup>b</sup>_ = _α<sup>ab</sup>_ mod _p_ 
+
+Based on the Discrete Log Problem ( found in number theory)
+
 ##ElGamal
+**Topic 8b, Week 12, CH 8, pg 227**
+- Proposed by ElGamal
+- used for encryption and is an extension of DHKE
+- security is based on the intractability of the Discrete Log Problem  
+
+Principal of ElGamal Encryption
+Key Exchange  
+	![ElGamal overview](crib_sheet_photos/ElGamal.JPG)
+
+ElGamal: Set-up
+- Large (1024+ bits) prime p and primitive element α are generated
+- Both parties perform DHKE to obtain a shared key K<sub>M</sub> (M for masking)
+- New idea:  
+    - Alice uses this key as a multiplication mask to encrypt _x_
+    - Bob uses the multiplicative inverse of the shared key (K<sub>M</sub>) to decrypt _y_  
+
+ElGamal in practice
+- Protocol is rearranges the sequence of operations so that Alice only has to send one message to Bob (instead of two)
+- Scheme is probabilistic since Alice picks a new i every time
+Key Exchange  
+	![ElGamal practice](crib_sheet_photos/ElGamal_Practice.JPG)
+    
 ##Hashing
+**Topic 9, Week 13, CH 11, pg 293**
 ##Number Theory (Euler, Fermat, last n digits, Group theory, primitive elements)
+###Discrete Log problem
+Find integer x to satisfy the following: 
+> _α<sup>x</sup>_ = β mod _p_
