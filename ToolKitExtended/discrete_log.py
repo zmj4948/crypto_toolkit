@@ -8,3 +8,7 @@ def discrete_log(x, base, mod):
             return i
     # return 0 if not defined
     return 0
+
+
+print(discrete_log(7,3,89))
+print(discrete_log(3,7,101))

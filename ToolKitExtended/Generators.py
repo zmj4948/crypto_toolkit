@@ -6,3 +6,5 @@ def generators(min_a, n):
     for a in range(min_a, n):
         if {pow(a, p) % n for p in range(1, len(z) + 1)} == z:
             yield a
+
+print()

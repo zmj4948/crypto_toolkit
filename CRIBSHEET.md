@@ -143,8 +143,9 @@ Key Exchange
 Alice computes: _B<sup>a</sup>_ = _(α<sup>b</sup>)<sup>a</sup>_ = _α<sup>ab</sup>_ mod _p_ 
 Bob computes: _A<sup>b</sup>_ = _(α<sup>a</sup>)<sup>b</sup>_ = _α<sup>ab</sup>_ mod _p_ 
 
-Based on the Discrete Log Problem ( found in number theory)
+Based on the Discrete Log Problem ( found in number theory)  
 
+When picking a value for α, make sure the value is primitative, so that the full cycle is used. 
 ##ElGamal
 **Topic 8b, Week 12, CH 8, pg 227**
 - Proposed by ElGamal
@@ -168,9 +169,16 @@ ElGamal in practice
 Key Exchange  
 	![ElGamal practice](crib_sheet_photos/ElGamal_Practice.JPG)
     
+    
 ##Hashing
 **Topic 9, Week 13, CH 11, pg 293**
+
 ##Number Theory (Euler, Fermat, last n digits, Group theory, primitive elements)
 ###Discrete Log problem
 Find integer x to satisfy the following: 
 > _α<sup>x</sup>_ = β mod _p_
+
+##Other Important Info
+###Birthday Collision formula
+Computing the probability of a birthday collision among n people: 
+1 - <sub>365</sub>P<sub>n</sub> / 365<sup>n</sup>

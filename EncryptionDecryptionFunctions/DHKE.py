@@ -3,4 +3,11 @@ def alice_bigA(p, fish, a):
 
 
 def common_secret(fish, big, p, little):
-    return (fish ** (big*little)) % p
+    return (big**little) % p
+
+p = 487
+fish = 11
+a = 355
+b = 200
+big = alice_bigA(p,fish,a)
+print(common_secret(fish, big, p, b))

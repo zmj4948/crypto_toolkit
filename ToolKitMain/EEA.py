@@ -5,3 +5,5 @@ def EEA(a, b):
     x = y1 - (b // a) * x1
     y = x1
     return gcd, x, y
+
+print(EEA(7, 31))

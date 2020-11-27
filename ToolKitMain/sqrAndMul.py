@@ -23,3 +23,5 @@ def operations_counter(power):
     print('squares:' + str(squares))
     print('mults:' + str(mult))
     print('total: ' + str(squares + mult))
+
+print(square_and_mul(14, 19, 31))

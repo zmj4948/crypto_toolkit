@@ -16,3 +16,9 @@ def alpha_to_zero(letter):
 
 def zero_to_alpha(num):
     return alphabet[num]
+
+
+
+print(zero_to_alpha(8))
+print(zero_to_alpha(9))
+print(zero_to_alpha(2))

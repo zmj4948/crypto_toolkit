@@ -7,3 +7,7 @@ def phi(n):
         if gcd(i, n) == 1:
             result += 1
     return result
+
+p = 35461
+q = 21799
+print((p-1)*(q-1))
